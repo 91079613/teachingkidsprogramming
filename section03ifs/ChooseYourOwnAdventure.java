@@ -26,10 +26,12 @@ public class ChooseYourOwnAdventure
       //      approachOoze (recipe below) --#4.1
       //      ------------- Recipe for approachOoze --#4.2
       //         TELL THE USER "YOU APPROACH A GLOWING, GREEN BUCKET OF OOZE. WORRIED THAT YOU WILL GET IN TROUBLE, YOU PICK UP THE BUCKET." --#3
-      MESSAGEBOX.SHOWMESSAGE(
-          "YOU APPROACH A GLOWING, REEN BUCKET OF OOZE. WORRIED THAT YOU WILL GET IN TROUBLE, YOU PICK UP THE BUCKET");
-      //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#7
-      //         If they answer "toilet" --#8.1
+      MessageBox.showMessage("You approach a glowing, green buckey of ooze. Worried that you will get in trouble"); 
+      String input = MessageBox.askForTextInput("Do you want to pour the ooze into the 'toilet' or the 'backyard'?"); 
+      if (input == "toilet")
+      {
+      }
+      
       //            pourIntoToilet (recipe below) --#12.1
       //            ------------- Recipe for pourIntoToilet --#12.2
       //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
@@ -57,19 +59,13 @@ public class ChooseYourOwnAdventure
       //            endStory --#9
       //      ------------- End of approachOoze recipe --#4.3
     }
-    else
     {
       //      endStory (recipe below) --#6.1
       //      ------------- Recipe for endStory --#6.2
       //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
       //      ------------- End of endStory recipe --#6.3
     }
-  }
-  private static void wakeUp()
-  {
-    wakeUp();
-  }
-  private static void wakeUp()
+  
   {
     //          ------------- Recipe for wakeUp --#2.2
     //              Tell the user "You wake up and have a boring day. The end." --#1
